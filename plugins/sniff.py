@@ -1,4 +1,4 @@
-"Build By Qano & Ported By Dappzx"
+"Sniff CFG by Qano & Modifed by Dappzx"
 import time
 from pyrogram.errors.exceptions.bad_request_400 import YouBlockedUser
 from userge import userge, Message
@@ -56,7 +56,7 @@ async def sniff(message: Message):
 				result = msgs.text
 				if "Satisfied with the result" in result:
 					result = result.replace("Satisfied with the result? Follow us!","").replace("🌐 BOT CHANNEL: @hctoolschannel","").replace("🌐 BOT GROUP: @hctools","").replace("💻 SOURCE CODE: https://github.com/hctools/hcdrill-tg","")
-					result = f"{result}".replace("[>]","•")
+					result = f"Dec by: @{uname}\n\n{result}".replace("[>]","»")
 		except StopConversation:
 			pass 
 		try:
