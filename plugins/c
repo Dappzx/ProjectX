@@ -270,10 +270,10 @@ async def key(message: Message):
 
 #vbv
 @userge.on_cmd("vbv", about={
-	'header': "Braintree",
+	'header': "Braintree 3d Check",
 	'usage': "{tr}vbv [Input CC]\n"})
 	
-async def gen(message: Message):
+async def vbv(message: Message):
 	"""Cek 3ds"""
 	replied = message.input_str
 	chat = "@rkhackingbot"
