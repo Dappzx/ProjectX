@@ -267,3 +267,95 @@ async def key(message: Message):
 		await message.edit(f"{msgs.text}")
 	except AttributeError:
 		await message.edit(f"`Bot tidak merespon!`", del_in=5)
+
+#vbv
+@userge.on_cmd("vbv", about={
+	'header': "Braintree",
+	'usage': "{tr}vbv [Input CC]\n"})
+	
+async def gen(message: Message):
+	"""Cek 3ds"""
+	replied = message.input_str
+	chat = "@rkhackingbot"
+	await message.edit("```Tunggu mas ```")
+	msgs = []
+	ERROR_MSG = "Ijin dulu sama @Dappzx"
+	try:
+		async with userge.conversation(chat) as conv:
+			try:
+				await conv.send_message("/vbv {}".format(replied))
+			except YouBlockedUser:
+				await message.err(f"**{ERROR_MSG}**", del_in=5)
+				return 
+			msgs = await conv.get_response(timeout=30, mark_read=True)
+			if "Wait" in msgs.text:
+				time.sleep(1)
+				msgs = await conv.get_response(timeout=30, mark_read=True) 
+				if "Wait" in msgs.text:
+					time.sleep(1)
+					msgs = await conv.get_response(timeout=30, mark_read=True) 
+					if "Wait" in msgs.text:
+						time.sleep(1)
+						msgs = await conv.get_response(timeout=30, mark_read=True) 
+						if "Wait" in msgs.text:
+							time.sleep(1)
+							msgs = await conv.get_response(timeout=30, mark_read=True)
+							if "Wait" in msgs.text:
+								time.sleep(1)
+								msgs = await conv.get_response(timeout=30, mark_read=True)
+								if "Wait" in msgs.text:
+									time.sleep(1)
+									msgs = await conv.get_response(timeout=30, mark_read=True)
+									if "Wait" in msgs.text:
+										time.sleep(1)
+										msgs = await conv.get_response(timeout=30, mark_read=True)
+										if "Wait" in msgs.text:
+											time.sleep(1)
+											msgs = await conv.get_response(timeout=30, mark_read=True)
+											if "Wait" in msgs.text:
+												time.sleep(1)
+												msgs = await conv.get_response(timeout=30, mark_read=True)
+												if "Wait" in msgs.text:
+													time.sleep(1)
+													msgs = await conv.get_response(timeout=30, mark_read=True)
+													if "Wait" in msgs.text:
+														time.sleep(1)
+														msgs = await conv.get_response(timeout=30, mark_read=True) 
+														if "Wait" in msgs.text:
+															time.sleep(1)
+															msgs = await conv.get_response(timeout=30, mark_read=True)  
+															if "Wait" in msgs.text:
+																time.sleep(1)
+																msgs = await conv.get_response(timeout=30, mark_read=True)  
+																if "Wait" in msgs.text:
+																	time.sleep(1)
+																	msgs = await conv.get_response(timeout=30, mark_read=True) 
+																	if "Wait" in msgs.text:
+																		time.sleep(1)
+																		msgs = await conv.get_response(timeout=30, mark_read=True) 
+																		if "Wait" in msgs.text:
+																			time.sleep(1)
+																			msgs = await conv.get_response(timeout=30, mark_read=True) 
+																			if "Wait" in msgs.text:
+																				time.sleep(1)
+																				msgs = await conv.get_response(timeout=30, mark_read=True) 
+																				if "Wait" in msgs.text:
+																					time.sleep(1)
+																					msgs = await conv.get_response(timeout=30, mark_read=True) 
+																					if "Wait" in msgs.text:
+																						time.sleep(1)
+																						msgs = await conv.get_response(timeout=30, mark_read=True) 
+																						if "Wait" in msgs.text:
+																							time.sleep(1)
+																							msgs = await conv.get_response(timeout=30, mark_read=True) 
+	except StopConversation:
+		pass 
+	try:
+		await message.edit(f"{msgs.text}")
+	except AttributeError:
+		await message.edit(f"`Bot tidak merespon!`", del_in=5)
+
+
+
+
+
