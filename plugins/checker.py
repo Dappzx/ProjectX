@@ -14,7 +14,7 @@ async def gen(message: Message):
 	"""Cek Auth"""
 	replied = message.input_str
 	chat = "@rkhackingbot"
-	await message.edit("```Tunggu mas ```")
+	await message.edit("```YAMETE KUDASAIII..```")
 	msgs = []
 	ERROR_MSG = "Ijin dulu sama @Dappzx"
 	try:
@@ -102,7 +102,7 @@ async def bin(message: Message):
 	"""BIN Ingfo"""
 	replied = message.input_str
 	chat = "@rkhackingbot"
-	await message.edit("```Tunggu mas```")
+	await message.edit("```YAMETE KUDASAII..```")
 	msgs = []
 	ERROR_MSG = "Ijin dulu sama @Dappzx"
 	try:
@@ -190,7 +190,7 @@ async def key(message: Message):
 	"""SK Checker"""
 	replied = message.input_str
 	chat = "@rkhackingbot"
-	await message.edit("```Tunggu mas```")
+	await message.edit("```YAMETE KUDASAII..```")
 	msgs = []
 	ERROR_MSG = "Ijin dulu sama @Dappzx"
 	try:
@@ -277,7 +277,7 @@ async def vbv(message: Message):
 	"""Cek 3ds"""
 	replied = message.input_str
 	chat = "@rkhackingbot"
-	await message.edit("```Tunggu mas ```")
+	await message.edit("```YAMETE KUDASAII..```")
 	msgs = []
 	ERROR_MSG = "Ijin dulu sama @Dappzx"
 	try:
